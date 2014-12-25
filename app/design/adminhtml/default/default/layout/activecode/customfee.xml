@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout>
+	<customfee_add_order_total>
+		<reference name="order_totals">
+			<block type="customfee/sales_order_totals_customfee" name="total_customfee"/>
+		</reference>
+	</customfee_add_order_total>
+	<customfee_add_invoice_total>
+		<reference name="invoice_totals">
+			<block type="customfee/sales_order_totals_customfee" name="total_customfee"/>
+		</reference>
+	</customfee_add_invoice_total>
+	<customfee_add_creditmemo_total>
+		<reference name="creditmemo_totals">
+			<block type="customfee/sales_order_totals_customfee" name="total_customfee"/>
+		</reference>
+	</customfee_add_creditmemo_total>
+	<adminhtml_sales_order_view>
+		<update handle="customfee_add_order_total"/>
+	</adminhtml_sales_order_view>
+	<adminhtml_sales_order_invoice_new>
+		<update handle="customfee_add_invoice_total"/>
+	</adminhtml_sales_order_invoice_new>
+	<adminhtml_sales_order_invoice_updateqty>
+		<update handle="customfee_add_invoice_total"/>
+	</adminhtml_sales_order_invoice_updateqty>
+	<adminhtml_sales_order_invoice_view>
+		<update handle="customfee_add_invoice_total"/>
+	</adminhtml_sales_order_invoice_view>
+	<adminhtml_sales_order_creditmemo_new>
+		<update handle="customfee_add_creditmemo_total"/>
+	</adminhtml_sales_order_creditmemo_new>
+	<adminhtml_sales_order_creditmemo_updateqty>
+		<update handle="customfee_add_creditmemo_total"/>
+	</adminhtml_sales_order_creditmemo_updateqty>
+	<adminhtml_sales_order_creditmemo_view>
+		<update handle="customfee_add_creditmemo_total"/>
+	</adminhtml_sales_order_creditmemo_view>
+</layout>
