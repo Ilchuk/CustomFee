@@ -16,6 +16,8 @@ Mage_Core_Block_Abstract
 	
 	public function initTotals()
 	{
+		
+		//error!!!
 		$amount = $this->getCheckTotal();
 		if(floatval($amount)){
 			$total  = new Varien_Object();
