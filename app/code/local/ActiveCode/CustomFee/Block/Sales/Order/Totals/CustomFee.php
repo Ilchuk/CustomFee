@@ -11,7 +11,7 @@ Mage_Core_Block_Abstract
 	public function getBaseCheckTotal()
 	{
 		$order = $this->getOrder();
-		return $order = getBaseCheckTotal();
+		return $order->getBaseCheckTotal();
 	}
 	
 	public function initTotals()
